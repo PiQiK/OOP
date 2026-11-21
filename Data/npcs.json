@@ -1,0 +1,20 @@
+[
+    {
+        "id": "portal_guard",
+        "name": "Kuya Guard",
+        "dialogues":
+        [
+            "Good morning! Welcome to USC Talamban Campus.",
+            "Make sure your student ID is visible."
+        ]
+    },
+    {
+        "id": "bunzel_student",
+        "name": "Engineering Student",
+        "dialogues": 
+        [
+            "Whew, that walk up to Bunzel never gets any easier.",
+            "Are you here for the OOP project showcase?"
+        ]
+    }
+]

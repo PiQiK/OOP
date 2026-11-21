@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://debccmfx53o7y"]
+
+[ext_resource type="Script" uid="uid://cs1crnr4wiion" path="res://Scripts/Entities/Player.cs" id="1_v402d"]
+[ext_resource type="Texture2D" uid="uid://bieell3tyohxw" path="res://icon.svg" id="2_agccv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltxwa"]
+size = Vector2(24, 24)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ltxwa"]
+radius = 18.0
+
+[node name="Player" type="CharacterBody2D" unique_id=996763506]
+script = ExtResource("1_v402d")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=800713016]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_agccv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=836282152]
+shape = SubResource("RectangleShape2D_ltxwa")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1569595470]
+zoom = Vector2(2, 2)
+
+[node name="InteractionZone" type="Area2D" parent="." unique_id=1877018210]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=1068776646]
+position = Vector2(24, 0)
+shape = SubResource("CircleShape2D_ltxwa")

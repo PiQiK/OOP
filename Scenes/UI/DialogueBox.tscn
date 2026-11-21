@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b63rekteuyojv"]
+
+[ext_resource type="Script" uid="uid://cc6dti78vx3xc" path="res://Scripts/UI/DialogueBox.cs" id="1_38wjl"]
+
+[node name="DialogueBox" type="CanvasLayer" unique_id=1515969394]
+script = ExtResource("1_38wjl")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1245450906]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=400193790]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=505651286]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=363634123]
+layout_mode = 2
+
+[node name="DialogueLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1930218035]
+layout_mode = 2
+
+[node name="HintLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1946333649]
+layout_mode = 2
+text = "Press [E] to continue..."
+horizontal_alignment = 2

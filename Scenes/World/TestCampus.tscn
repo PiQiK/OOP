@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ke0opechehnd"]
+
+[ext_resource type="PackedScene" uid="uid://debccmfx53o7y" path="res://Scenes/Entities/Player.tscn" id="1_ain4n"]
+[ext_resource type="PackedScene" uid="uid://bgck6v7kq52ic" path="res://Scenes/Entities/Npc.tscn" id="2_o7guq"]
+[ext_resource type="PackedScene" uid="uid://b63rekteuyojv" path="res://Scenes/UI/DialogueBox.tscn" id="3_o7guq"]
+
+[node name="TestCampus" type="Node2D" unique_id=1839410038]
+
+[node name="Player" parent="." unique_id=996763506 instance=ExtResource("1_ain4n")]
+DisplayName = "Carl"
+
+[node name="Npc" parent="." unique_id=733104061 instance=ExtResource("2_o7guq")]
+position = Vector2(100, 0)
+NpcId = "portal_guard"
+DisplayName = "Guard at Portal"
+
+[node name="DialogueBox" parent="." unique_id=1515969394 instance=ExtResource("3_o7guq")]

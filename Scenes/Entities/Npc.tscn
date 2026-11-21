@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bgck6v7kq52ic"]
+
+[ext_resource type="Script" uid="uid://crxwfxqo7kovg" path="res://Scripts/Entities/Npc.cs" id="1_ideov"]
+[ext_resource type="Texture2D" uid="uid://bieell3tyohxw" path="res://icon.svg" id="2_tc60k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltxwa"]
+size = Vector2(24, 24)
+
+[node name="Npc" type="CharacterBody2D" unique_id=733104061]
+script = ExtResource("1_ideov")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1330327291]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_tc60k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=115033407]
+shape = SubResource("RectangleShape2D_ltxwa")
